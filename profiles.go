@@ -130,7 +130,6 @@ func (p *Profiles) get(query string) (interface{}, []interface{}) {
 			return val, nil
 		}
 	}
-	panic("🔍: no value found for key: " + query)
 }
 
 func getValues(file string, profiles ...string) (map[interface{}]interface{}, error) {
