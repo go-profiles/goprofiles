@@ -118,7 +118,7 @@ func (p *Profiles) get(query string) (interface{}, []interface{}) {
 	for _, key := range keys {
 		val, ok := values[key]
 		if !ok {
-			panic("🔍: no value found for key: " + query)
+			break
 		}
 
 		if nestedMap, isMap := val.(map[interface{}]interface{}); isMap {
@@ -130,6 +130,7 @@ func (p *Profiles) get(query string) (interface{}, []interface{}) {
 			return val, nil
 		}
 	}
+	panic("🔍: no value found for key: " + query)
 }
 
 func getValues(file string, profiles ...string) (map[interface{}]interface{}, error) {
