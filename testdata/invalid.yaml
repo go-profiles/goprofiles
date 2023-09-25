@@ -1,0 +1,9 @@
+goprofiles:
+common:
+  nested:
+some_int: 1
+  some_float: 1.2
+dev:
+some_string: "some string"
+prod:
+some_string: "some other string"

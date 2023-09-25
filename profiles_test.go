@@ -190,6 +190,14 @@ func TestGetYamlValues(t *testing.T) {
 	if incorrectProfile != nil {
 		t.Errorf("getYamlValues did not return the correct value")
 	}
+
+	invalid, err := getYamlValues("testdata/invalid.yaml", "dev")
+	if err == nil {
+		t.Errorf("getYamlValues returned an error" + err.Error())
+	}
+	if invalid != nil {
+		t.Errorf("getYamlValues did not return the correct value")
+	}
 }
 
 func TestNew(t *testing.T) {
