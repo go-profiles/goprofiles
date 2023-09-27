@@ -36,10 +36,9 @@ Otherwise, run the following Go command to install the `go-profiles` package:
 $ go get -u github.com/go-profiles/goprofiles
 ```
 
-
 ### Running Go-Profiles
 
-First you need to define your Go-Profiles in a yaml file such as the following `profiles.yaml`:
+First you'll need to define your Go-Profiles in a yaml file such as the following `profiles.yaml`:
 
 ```yaml
 goprofiles:
@@ -47,12 +46,13 @@ goprofiles:
     db:
       host: localhost
       port: 5432
-    prod:
-      db:
-        host: db.prod.com
-        port: 5432
+  prod:
+    db:
+      host: db.prod.com
+      port: 5432
 ```
-Next you need to import the Go-Profiles package to load and access your configuration. The following simple `example.go` illustrates how simple Go-Profiles makes configuration management:
+
+Next you'll need to import the Go-Profiles package to load and access your configuration. The following simple `example.go` illustrates how simple Go-Profiles makes configuration management:
 
 ```go
 package main
