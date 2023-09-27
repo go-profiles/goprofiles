@@ -1,8 +1,10 @@
 # Go-Profiles Configuration Framework
 <img align="right" width="159px" src="https://raw.githubusercontent.com/go-profiles/logo/master/color.png">
 
-[![Go](https://github.com/go-profiles/goprofiles/actions/workflows/goprofiles.yml/badge.svg)](https://github.com/go-profiles/goprofiles/actions/workflows/go.yml) [![codecov](https://codecov.io/gh/go-profiles/goprofiles/graph/badge.svg?token=LV851U823H)](https://codecov.io/gh/go-profiles/goprofiles)
+[![Go](https://github.com/go-profiles/goprofiles/actions/workflows/goprofiles.yml/badge.svg)](https://github.com/go-profiles/goprofiles/actions/workflows/go.yml)
+[![codecov](https://codecov.io/gh/go-profiles/goprofiles/graph/badge.svg?token=LV851U823H)](https://codecov.io/gh/go-profiles/goprofiles)
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-profiles/goprofiles)](https://goreportcard.com/report/github.com/go-profiles/goprofiles)
+[![GoDoc](https://pkg.go.dev/badge/github.com/go-profiles/goprofiles?status.svg)](https://pkg.go.dev/github.com/go-profiles/goprofiles?tab=doc)
 
 Go-Profiles is a lightweight configuration management framework written in Go. It simplifies configuration handling by allowing developers to define different profiles and easily switch between them based on their application environment.
 
